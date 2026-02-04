@@ -1,0 +1,104 @@
+GPT-5.1-Codex-Max  ：：
+User: prompt
+You are a senior front-end engineer specializing in React and TypeScript.
+Your task is to build a complete Product Feature Feedback & Voting web application from scratch based strictly on the provided input_ui_spec.txt.
+
+This UI Case evaluates the ability to:
+- Create a product-style application from scratch
+- Design clear UI flows
+- Implement interactive stateful components
+- Use TypeScript correctly
+
+────────────────────────────────────Technical Requirements────────────────────────────────────
+- Framework: React + TypeScript
+- State management: React hooks
+- Styling: Any simple approach
+- No backend, no authentication
+- Use mock data
+
+────────────────────────────────────Core Functional Requirements────────────────────────────────────
+1. Users can:
+   - Submit new feature requests
+   - Vote on existing feature requests
+2. Each feature request has:
+   - Title
+   - Description
+   - Status (Open / Planned / Completed)
+   - Vote count
+3. Users can:
+   - Sort features by votes
+   - Filter features by status
+
+────────────────────────────────────Required Screens────────────────────────────────────
+- Feature list / overview
+- Feature submission form
+- Feature detail view
+
+────────────────────────────────────Deliverables────────────────────────────────────
+- Complete React + TypeScript app
+- Fully typed data models
+- UI logic for voting and status changes
+- Clear explanation of state updates
+
+────────────────────────────────────Strict Rules────────────────────────────────────
+- Do NOT add authentication or backend
+- Do NOT invent features beyond the spec
+- Do NOT return wireframes only
+- Implement a functioning application
+
+
+GitHub Copilot: Optimizing tool selection...
+
+Created 5 todos
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/public)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/package.json)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/tsconfig.json)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/tsconfig.node.json)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/vite.config.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/index.html)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/main.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/types.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/data.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/components)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/components/FeatureCard.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/components/FeatureList.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/components/Filters.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/components/FeatureForm.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/components/FeatureDetail.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/App.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.4/case2/GPT-5.1-Codex-Max/src/styles.css)
+
+Starting: *Review for spec compliance and provide summary* (5/5)
+
+Completed: *Review for spec compliance and provide summary* (5/5)
+
+- Built React + TS Vite app with feature state, sorting, filtering, voting, and status updates orchestrated in App.tsx using hooks, derived filtered/sorted lists, and detail selection.
+- Added typed models and mock seeds via types.ts and data.ts; interactive UI components for list/cards, filters, form, and detail pane in components support immediate vote increments, status edits, and new feature submissions.
+- Styled desktop-first layout with hero, toolbar, cards, and responsive grid/sticky detail in styles.css.
+
+Run locally:
+- npm install
+- npm run dev
+
+State update flow: votes/status changes mutate `features` in App, triggering re-sort/filter; selection drives detail view; form prepends new feature, resets filters, and focuses detail.
+
+Made changes.
