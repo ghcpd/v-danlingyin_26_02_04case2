@@ -1,0 +1,18 @@
+Application Name: Feature Feedback Board
+
+Entities:
+- Feature (id, title, description, status, votes)
+
+Status Values:
+- Open
+- Planned
+- Completed
+
+UI Expectations:
+- Voting updates must reflect immediately
+- Sorting by votes should be supported
+- Status filtering must be clear and intuitive
+
+Constraints:
+- Desktop-first web app
+- No persistence required
